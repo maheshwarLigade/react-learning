@@ -3,7 +3,7 @@ Learning react js framework basics from scratch
 
 Cerate React App 
 
-npx create-react-app my-app
+npx create-react-app my-app <br/>
 cd my-app
 npm start
 
