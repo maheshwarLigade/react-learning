@@ -9,7 +9,7 @@ npm start
 
 OR just simple 
 
-npm init -y
-npm i <dependencies>
+npm init -y <br/>
+npm i <dependencies> <br/>
 npm start 
 
