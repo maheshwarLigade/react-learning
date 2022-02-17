@@ -6,22 +6,26 @@ import ReactDom from 'react-dom'
 // always return JSX
 //always return single element
 //
-function Greeting(){
+function Book(){
 
   return (
      <div>
        <h1>This is my first Nested React Component</h1>
-       <Name/>
-       <Message/>
+       <Cover/>
+       <Title/>
+       <Author/>
      </div>
     );
 }
 
-const Name =() => {
-  return <h4>Hello Maheshwar!</h4>
+const Cover =() => {
+  return <img src="https://rukminim1.flixcart.com/image/612/612/kpodocw0/book/g/p/c/macroeconomics-sie-22nd-edition-original-imag3uzquthwzwzk.jpeg?q=70" alt="mobileImge"/>
+
 }
 
-const Message = () => <p>Welcome to React world</p>
+const Title = () => <h4>Macroeconomics ( SIE ) | 22nd Edition</h4>
+
+const Author = () => <p>McConnell Campbell R, Brue Stanley L.</p>
 
 // inject component to index.html to render
-ReactDom.render(<Greeting/>,document.getElementById('root'));
+ReactDom.render(<Book/>,document.getElementById('root'));
