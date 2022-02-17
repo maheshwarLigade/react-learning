@@ -1,20 +1,37 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
+// CSS
+import './index.css';
+
 // special function with name of function start with capital letter
 // stateless functional component
 // always return JSX
 //always return single element
 //
+
+function BookList(){
+ 
+  return (
+   <section className='booklist'>
+    <Book/>
+    <Book/>
+    <Book/>
+
+   </section>
+
+  );
+
+}
+
 function Book(){
 
   return (
-     <div>
-       <h1>This is my first Nested React Component</h1>
+    <article className='book'>
        <Cover/>
        <Title/>
        <Author/>
-     </div>
+     </article>
     );
 }
 
@@ -23,9 +40,9 @@ const Cover =() => {
 
 }
 
-const Title = () => <h4>Macroeconomics ( SIE ) | 22nd Edition</h4>
+const Title = () => <h1>Macroeconomics ( SIE ) | 22nd Edition</h1>
 
-const Author = () => <p>McConnell Campbell R, Brue Stanley L.</p>
+const Author = () => <h4>McConnell Campbell R, Brue Stanley L.</h4>
 
 // inject component to index.html to render
-ReactDom.render(<Book/>,document.getElementById('root'));
+ReactDom.render(<BookList/>,document.getElementById('root'));
